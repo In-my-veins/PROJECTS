@@ -1,0 +1,107 @@
+## 8. cart.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#0f172a;
+}
+
+.logo{
+color:#38bdf8;
+font-size:26px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+
+.cart{
+padding:60px;
+}
+
+.item{
+background:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.checkout{
+padding:15px 30px;
+background:#0f172a;
+color:white;
+border:none;
+border-radius:8px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="logo">ElectroHub ⚡</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="repair.html">Repair</a>
+<a href="orders.html">Orders</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Sign In</a>
+<a href="register.html">Sign Up</a>
+<a href="cart.html">🛒 Cart</a>
+</nav>
+</header>
+
+<div class="cart">
+<h1>Your Cart</h1>
+
+<div class="item">
+<h3>Gaming Laptop</h3>
+<p>$950</p>
+</div>
+
+<div class="item">
+<h3>Smart TV</h3>
+<p>$600</p>
+</div>
+
+<h2>Total: $1550</h2>
+
+<a href="checkout.html">
+<button class="checkout">Proceed to Checkout</button>
+</a>
+</div>
+
+<footer>
+<h3>ElectroHub ⚡</h3>
+<p>© 2026 ElectroHub</p>
+</footer>
+</body>
+</html>
+```
