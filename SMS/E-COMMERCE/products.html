@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ElectroHub - Products</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#0f172a;
+    color:white;
+    flex-wrap:wrap;
+}
+
+.logo{
+    color:#38bdf8;
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:6px;
+}
+
+nav a:hover{
+    background:#1e293b;
+}
+
+/* TITLE */
+.title{
+    text-align:center;
+    padding:40px 20px;
+    background:white;
+}
+
+/* GRID */
+.grid{
+    padding:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* PRODUCT CARD */
+.product{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:scale(1.03);
+}
+
+.product img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#0f172a;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">ElectroHub ⚡</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="repair.html">Repair</a>
+        <a href="orders.html">Orders</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Sign In</a>
+        <a href="register.html">Sign Up</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+
+</header>
+
+<!-- TITLE -->
+<div class="title">
+    <h1>All Electronics Products</h1>
+    <p>Computers • TVs • Radios • Projectors • Accessories • Spare Parts</p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="grid">
+
+    <!-- COMPUTERS -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+        <h3>Gaming Laptop RTX 3060</h3>
+        <p>$950</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3">
+        <h3>Office Desktop PC</h3>
+        <p>$700</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc">
+        <h3>27" Monitor</h3>
+        <p>$220</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+        <h3>Keyboard & Mouse Set</h3>
+        <p>$45</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <!-- TVs -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2">
+        <h3>Smart LED TV 55"</h3>
+        <p>$600</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
+        <h3>OLED 4K TV</h3>
+        <p>$1200</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1580256081112-e49377338b7f">
+        <h3>TV Remote</h3>
+        <p>$10</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <!-- PROJECTORS -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+        <h3>HD Projector</h3>
+        <p>$320</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1612810436541-336d0a3c4c5c">
+        <h3>Mini Projector</h3>
+        <p>$180</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008">
+        <h3>Classic Radio</h3>
+        <p>$40</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231693">
+        <h3>Bluetooth Speaker</h3>
+        <p>$60</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <!-- ACCESSORIES -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0">
+        <h3>Power Adapter</h3>
+        <p>$15</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1606229365485-93a3b8ee0385">
+        <h3>USB Cable</h3>
+        <p>$5</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1612810436541-336d0a3c4c5c">
+        <h3>HDMI Cable</h3>
+        <p>$8</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <!-- SPARE PARTS -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1581090700227-4c2f1c2a3f1a">
+        <h3>Laptop Battery</h3>
+        <p>$35</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+        <h3>Repair Kit</h3>
+        <p>$120</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
+        <h3>Screen Replacement Kit</h3>
+        <p>$90</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h3>ElectroHub ⚡</h3>
+    <p>© 2026 ElectroHub - All Electronics in One Place</p>
+</footer>
+
+</body>
+</html>
